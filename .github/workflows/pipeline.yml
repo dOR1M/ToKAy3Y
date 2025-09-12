@@ -8,7 +8,7 @@ jobs:
     name: Docker Compose
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Start containers
         run: docker-compose -f "docker-compose.yml" up -d --build
@@ -33,7 +33,7 @@ jobs:
 #    name: Event Integration Tests
 #    runs-on: ubuntu-latest
 #    steps:
-#      - uses: actions/checkout@v3
+#      - uses: actions/checkout@v4
 #      - name: Set up Node.js
 #        uses: actions/setup-node@v3
 #        with:
@@ -48,7 +48,7 @@ jobs:
 #    runs-on: ubuntu-22.04
 #    steps:
 #      - name: Checkout
-#        uses: actions/checkout@v3
+#        uses: actions/checkout@v4
 #      # Install NPM dependencies, cache them correctly
 #      # and run all Cypress tests
 #      - name: Cypress run
